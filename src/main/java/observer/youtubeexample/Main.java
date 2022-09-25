@@ -1,6 +1,5 @@
 package observer.youtubeexample;
 
-
 public class Main {
     public static void main(String[] args) {
         YoutubeChannel youtubeChannel = new YoutubeChannel();

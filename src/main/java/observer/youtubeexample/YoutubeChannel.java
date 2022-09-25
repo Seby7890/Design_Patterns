@@ -27,7 +27,7 @@ public class YoutubeChannel implements Observable {
 
     @Override
     public void notifyObservers() {
-        for (Observer subscriber: subscribers) {
+        for (Observer subscriber : subscribers) {
             subscriber.update();
         }
     }
