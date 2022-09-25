@@ -10,7 +10,4 @@ public class Sensor {
     public String getName() {
         return name;
     }
-
-
-
 }

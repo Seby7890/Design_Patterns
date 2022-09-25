@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SensorSystem implements Observable {
-    private List<Observer> sensorList;
+    private final List<Observer> sensorList;
 
     public SensorSystem() {
         this.sensorList = new ArrayList<>();
