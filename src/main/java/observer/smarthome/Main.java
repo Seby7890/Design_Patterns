@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             Sensor smokeSensor = SensorFactory.createSensor("smokeSensor", "kitchen", 10);
-            Sensor motionSensor = SensorFactory.createSensor("motionSensor", "kitchen", 10);
+            Sensor motionSensor = SensorFactory.createSensor("motionSensor", "door", 10);
             SensorSystem sensorSystem = new SensorSystem();
 
             sensorSystem.registerObserver((Observer) motionSensor);

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class YoutubeChannel implements Observable {
-    private List<Observer> subscribers;
+    private final List<Observer> subscribers;
 
     public YoutubeChannel() {
         subscribers = new ArrayList<>();
@@ -18,11 +18,6 @@ public class YoutubeChannel implements Observable {
     @Override
     public void registerObserver(Observer observer) {
         subscribers.add(observer);
-    }
-
-    @Override
-    public void removeObserver(Observer observer) {
-        subscribers.remove(observer);
     }
 
     @Override

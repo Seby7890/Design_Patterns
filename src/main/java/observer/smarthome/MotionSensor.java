@@ -24,7 +24,7 @@ public class MotionSensor extends Sensor implements Observer {
     @Override
     public void detect() {
         if (currentDistance < activationDistance) {
-            Logger.getInstance().log("Distance has been reduced with " + String.valueOf(activationDistance - currentDistance));
+            Logger.getInstance().log("Distance has been reduced with " + (getActivationDistance() - getCurrentDistance()));
         }
     }
 }

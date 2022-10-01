@@ -16,11 +16,6 @@ public class SensorSystem implements Observable {
     }
 
     @Override
-    public void removeObserver(Observer observer) {
-        sensorList.remove(observer);
-    }
-
-    @Override
     public void notifyObservers() {
         for (Observer sensor : sensorList) {
             sensor.detect();

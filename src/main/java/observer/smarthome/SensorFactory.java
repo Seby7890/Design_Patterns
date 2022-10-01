@@ -5,7 +5,7 @@ public class SensorFactory {
         return switch (type) {
             case "motionSensor" -> new MotionSensor(name, threshold);
             case "smokeSensor" -> new SmokeSensor(name, threshold);
-            default -> throw new IllegalArgumentException("sensor type not available");
+            default -> throw new IllegalArgumentException("Sensor type not available");
         };
     }
 }

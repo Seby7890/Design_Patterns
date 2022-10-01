@@ -24,7 +24,7 @@ public class SmokeSensor extends Sensor implements Observer {
     @Override
     public void detect() {
         if (currentVolume > activationVolume) {
-            Logger.getInstance().log("Volume has increased with " + String.valueOf(currentVolume - activationVolume));
+            Logger.getInstance().log("Volume has increased with " + (getCurrentVolume() - getActivationVolume()));
         }
     }
 }
